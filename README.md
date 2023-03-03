@@ -1,4 +1,4 @@
-# 🦉OwlGPT- a chat GPT clone (currently under construction)
+# 🦉OwlGPT(currently under construction)
 
 ## ℹAbout:
 This is a chat GPT clone 
