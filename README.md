@@ -17,9 +17,9 @@ This is a chat GPT clone
 (Will be added later)
 
 ## 🛠Stack:
--TypeScript
--HTML
--CSS
--Axios
--Jest
--ESlint/ Prettier
+- TypeScript
+- HTML
+- CSS
+- Axios
+- Jest
+- ESlint/ Prettier
