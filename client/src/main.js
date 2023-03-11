@@ -73,15 +73,18 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch("https://owl-gpt.onrender.com/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      prompt: data.get("prompt"),
-    }),
-  });
+  const response = await fetch(
+    "https://allorigins.hexlet.app/raw?url=https://owl-gpt.onrender.com/",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        prompt: data.get("prompt"),
+      }),
+    }
+  );
 
   clearInterval(loadInterval);
   messageDiv.innerHTML = " ";
