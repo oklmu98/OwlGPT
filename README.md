@@ -1,4 +1,4 @@
-# 🦉OwlGPT(currently under construction)
+# 🦉OwlGPT
 
 ## ℹAbout:
 This is a chat GPT clone 
@@ -17,7 +17,7 @@ Server side: https://owl-gpt.onrender.com/
 4)make start
 ```
 ## 🎛️Tests:
-(Will be added later)
+<a href="https://codeclimate.com/github/iFoxtrot33/OwlGPT/maintainability"><img src="https://api.codeclimate.com/v1/badges/7bd0e95b0d1b584be86a/maintainability" /></a>
 
 ## 🛠Stack:
 - TypeScript
