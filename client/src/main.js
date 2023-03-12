@@ -75,6 +75,7 @@ const handleSubmit = async (e) => {
 
   const response = await fetch("https://owl-gpt.onrender.com/", {
     method: "POST",
+    mode: "cors",
     headers: {
       "Content-Type": "application/json",
     },
