@@ -4,7 +4,9 @@
 This is a chat GPT clone 
 
 ## 🌐Demo:
-(not finished yet)
+Client side: https://owl-gpt.vercel.app/
+Server side: https://owl-gpt.onrender.com/
+
 
 ## 💻To deploy localy:
 ```
