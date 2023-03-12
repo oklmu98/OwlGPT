@@ -13,30 +13,12 @@ const openai = new OpenAIApi(configuration);
 
 const app = express();
 
-const whitelist = ["https://owl-gpt.vercel.app/"];
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
-
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://owl-gpt.vercel.app");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
 
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "Hello!",
+    message: "Hello Iurii! ",
   });
 });
 
@@ -53,6 +35,14 @@ app.post("/", async (req, res) => {
       frequency_penalty: 0.5,
       presence_penalty: 0,
     });
+
+    res.setHeader("Access-Control-Allow-Origin", "*"); // allow all origins
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST"); // allow GET and POST requests
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "X-Requested-With,content-type"
+    ); // allow these headers
+    res.setHeader("Access-Control-Allow-Credentials", true); // allow credentials
 
     res.status(200).send({
       bot: response.data.choices[0].text,
