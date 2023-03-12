@@ -36,13 +36,13 @@ app.post("/", async (req, res) => {
       presence_penalty: 0,
     });
 
-    res.setHeader("Access-Control-Allow-Origin", "*"); // allow all origins
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST"); // allow GET and POST requests
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST");
     res.setHeader(
       "Access-Control-Allow-Headers",
       "X-Requested-With,content-type"
-    ); // allow these headers
-    res.setHeader("Access-Control-Allow-Credentials", true); // allow credentials
+    );
+    res.setHeader("Access-Control-Allow-Credentials", true);
 
     res.status(200).send({
       bot: response.data.choices[0].text,
