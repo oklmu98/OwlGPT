@@ -21,6 +21,8 @@ Server side: https://owl-gpt.onrender.com/
 
 ## 🛠Stack:
 - VanillaJS
+- Express
 - HTML
 - CSS
 - ESlint/ Prettier
+- Vite
